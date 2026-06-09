@@ -46,6 +46,7 @@ jspm_packages/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS generated files
 .DS_Store
@@ -56,9 +57,23 @@ jspm_packages/
 ehthumbs.db
 Thumbs.db
 
-# Vercel
-.vercel
+# Netlify
+.netlify
 
 # Typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Temporary folders
+tmp/
+temp/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
