@@ -20,6 +20,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+pnpm-debug.log*
 
 # Runtime data
 pids
@@ -27,9 +28,12 @@ pids
 *.seed
 *.pid.lock
 
-# Coverage directory used by tools like istanbul
+# Coverage directory
 coverage/
 *.lcov
+
+# nyc test coverage
+.nyc_output
 
 # Dependency directories
 node_modules/
@@ -41,28 +45,40 @@ jspm_packages/
 # Optional eslint cache
 .eslintcache
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Optional REPL history
+.node_repl_history
 
-# Netlify
-.netlify
+# Output of 'npm pack'
+*.tgz
 
-# Typescript
-*.tsbuildinfo
-next-env.d.ts
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js cache and build outputs
+.next/
+out/
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
 
 # Temporary folders
 tmp/
@@ -72,8 +88,16 @@ temp/
 .vscode/*
 !.vscode/extensions.json
 .idea
+.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Netlify
+.netlify/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
